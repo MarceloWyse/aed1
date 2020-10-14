@@ -115,11 +115,10 @@ void criaLista(void* pbuffer)
 	Pessoa* p;
 	p = pbuffer;
 	
-	int i;
-	for(i = 0; i < 10; i++)
+	for(p->i = 0; p->i < 10; p->i++)
 	{
-		p[i].nome = malloc(sizeof(char));
-		p[i].nome[0] = '\0';	
+		p[p->i].nome = malloc(sizeof(char));
+		p[p->i].nome[0] = '\0';	
 	}
 	
 }
